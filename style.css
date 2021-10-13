@@ -1,0 +1,150 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+
+.header {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.header__title {
+    color: white;
+    font-size: 24px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.row {
+    display: flex;
+}
+.content__left {
+    background-color: yellow;
+    width: 30%;
+}
+.content__right {
+    width: 70%;
+    background-color: green;
+    text-align: center;
+}
+.content__a {
+    color: black;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.content__menu {
+    padding-top: 20px;
+}
+.content__img {
+    width: 50%;
+    height: 50%;
+    padding-top: 40px;
+}
+.articles {
+    text-align: center;
+    color: white;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.content__first {
+    width: 15%;
+    background-color: black;
+    height: 100px;
+}
+.content__second {
+    width: 15%;
+    background-color: black;
+    height: 100px;
+}
+.content__third {
+    width: 15%;
+    background-color: black;
+    height: 100px;
+}
+.footer {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+.footer__title {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 24px;
+}
